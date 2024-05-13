@@ -4,7 +4,7 @@ Dobrodošli u repozitorij za web aplikaciju namijenjenu turističkoj agenciji! O
 
 ## O Projektu 🚀
 
-Cilj ovog projekta je izraditi web aplikaciju za turističku agenciju koja će omogućiti korisnicima da pregledaju ponude putovanja, postavljaju pitanja, rezervišu putovanja a i upravljaju svojim rezervacijama. Aplikacija podržava dvije korisničke uloge: admin i user, svaka sa svojim specifičnim privilegijama.
+Cilj ovog projekta je izraditi web aplikaciju za turističku agenciju koja će omogućiti korisnicima da pregledaju ponude putovanja, postavljaju pitanja, rezervišu putovanja a i upravljaju svojim rezervacijama. Aplikacija podržava dvije korisničke uloge: admin i user, svaka sa svojim specifičnim privilegijama. Također postoji mogućnost pregleda aplikacije kao gost.
 
 ## Funkcionalnosti ⚙️
 
@@ -17,6 +17,9 @@ Cilj ovog projekta je izraditi web aplikaciju za turističku agenciju koja će o
 ### 2. Stranice za Login i Registraciju
 
 - Omogućava prijavu svim registrovanim korisnicima i registraciju novih korisnika.
+  #### Prijava kao Admin
+Korisničko ime: `Admin`
+Lozinka: `admin123`
 
 ### 3. Glavna Stranica
 
