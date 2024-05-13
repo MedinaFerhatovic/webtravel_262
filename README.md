@@ -17,9 +17,10 @@ Cilj ovog projekta je izraditi web aplikaciju za turističku agenciju koja će o
 ### 2. Stranice za Login i Registraciju
 
 - Omogućava prijavu svim registrovanim korisnicima i registraciju novih korisnika.
+  
   #### Prijava kao Admin
-Korisničko ime: `Admin`
-Lozinka: `admin123`
+    - Korisničko ime: `Admin`
+    - Lozinka: `admin123`
 
 ### 3. Glavna Stranica
 
