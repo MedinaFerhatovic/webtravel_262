@@ -32,9 +32,10 @@ Cilj ovog projekta je izraditi web aplikaciju za turističku agenciju koja će o
 
 - Podaci o korisnicima, putovanjima i rezervacijama su pohranjeni u MongoDB bazi podataka.
 
-## Korištene Tehnologije  🛠️
+## Tehnologije Korištene 🛠️
 
 - ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)
+- ![Express.js](https://img.shields.io/badge/-Express.js-000000?logo=express&logoColor=white)
 - ![Angular](https://img.shields.io/badge/-Angular-DD0031?logo=angular&logoColor=white)
 - ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white)
 - ![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?logo=bootstrap&logoColor=white) 
