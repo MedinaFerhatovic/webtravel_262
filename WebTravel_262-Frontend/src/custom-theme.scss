@@ -1,0 +1,19 @@
+
+@use '@angular/material' as mat;
+@include mat.core();
+
+$WebTravel_262-primary: mat.define-palette(mat.$indigo-palette);
+$WebTravel_262-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$WebTravel_262-warn: mat.define-palette(mat.$red-palette);
+
+$WebTravel_262-theme: mat.define-light-theme((
+  color: (
+    primary: $WebTravel_262-primary,
+    accent: $WebTravel_262-accent,
+    warn: $WebTravel_262-warn,
+  )
+));
+
+@include mat.all-component-themes($WebTravel_262-theme);
+

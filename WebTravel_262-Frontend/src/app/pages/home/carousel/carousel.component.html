@@ -1,0 +1,105 @@
+ <app-category (onSubmit)="filter($event)"></app-category>
+
+  
+  <div class="carousel">
+    <input type="radio" name="slides" *ngFor="let dest of allDestinations; let i = index" [checked]="i === currentSlide" [id]="'slide-' + (i + 1)" (change)="changeSlide(i)">
+    <ul class="carousel__slides">
+      <li class="carousel__slide" *ngFor="let dest of (filteredDestinations.length ? filteredDestinations : allDestinations); let i = index" [ngClass]="{'active': i === currentSlide}">
+        <div class="image">
+          <img [src]=dest.imageURL alt="">
+        </div>
+        <div class="place-text">
+          <div class="hold">
+            <p>{{dest.city}}, <span class="country">{{dest.country}}</span></p>
+            <div class="review">{{dest.review}}</div>
+          </div>
+          <div class="description">{{dest.description}}</div>
+        </div>
+        <button class="btn" mat-stroked-button (click)="checkBooking(dest._id)"> REZERVACIJA</button>
+        <button class="btn" mat-stroked-button (click)="openCommentForm(dest)">PITANJA {{ getCommentCount(dest) }}</button>
+      </li>
+    </ul>
+    <ul class="carousel__thumbnails">
+      <li *ngFor="let dest of allDestinations; let i = index">
+        <label [for]="'slide-' + (i + 1)" (click)="changeSlide(i)"><img [src]=dest.imageURL alt=""></label>
+      </li>
+    </ul>
+  </div>
+  
+
+  <div class="booking" *ngIf="isBooking">
+
+    <form [formGroup]="BookingForm" (ngSubmit)="createBooking(bookUser)">
+  
+      <div class="form-title">
+        <h1>Rezervacija za {{selectedDestination?.city}}, {{selectedDestination?.country}} </h1>
+        <h1 style="cursor: pointer;"><a (click)="isBooking=false"><mat-icon>X</mat-icon></a></h1>
+      </div>
+
+      <mat-form-field appearance="fill">
+        <mat-label>ID destinacije:</mat-label>
+        <input matInput  formControlName="destID" [readonly] = "true">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>ID korisnika:</mat-label>
+        <input matInput  formControlName="userID" [readonly] = "true">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Ime i prezime:</mat-label>
+        <input matInput formControlName="fullName" [readonly]="true" [value]="u?.firstName + ' ' + u?.lastName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Broj osoba:</mat-label>
+        <input matInput formControlName="persons">
+      </mat-form-field>
+
+
+      <mat-form-field appearance="fill">
+        <mat-label>Unesite raspon datuma</mat-label>
+        <mat-date-range-input [rangePicker]="picker">
+          <input matStartDate formControlName="startDate">
+          <input matEndDate formControlName="endDate">
+        </mat-date-range-input>
+        <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+  
+      </mat-form-field>
+  
+      <button mat-button type="submit" id="form-btn" [disabled]="BookingForm.invalid">Rezervišite sada</button>
+  
+    </form>
+  
+  </div> 
+
+  <div class="comment-form" *ngIf="showCommentForm && selectedDestination">
+    <h1 style="cursor: pointer;"><a (click)="closeCommentForm()"><mat-icon>X</mat-icon></a></h1>
+    <div class="comments-section">
+        <h2>Pitanja i komentari</h2>
+        <div class="comment" *ngFor="let comment of selectedDestination.comments">
+            <p><strong>Korisnik {{comment.user.username}}: </strong>{{ comment.message }}</p>
+            <p>{{ comment.date | date: 'dd/MM/yyyy' }}</p>
+        </div>
+    </div>
+    <form (submit)="addComment()" action="">
+        <mat-form-field appearance="fill" class="mat-form-field">
+            <mat-label>Unesite pitanje/komentar:</mat-label>
+            <textarea matInput [(ngModel)]="newComment" name="newComment" required></textarea>
+        </mat-form-field>
+    </form>
+    <button mat-button type="button" id="submit-comment-btn" (click)="addComment()">Objavi pitanje</button>
+</div>
+
+  
+
+  
+  
+  
+
+  
+  
+  
+

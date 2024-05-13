@@ -1,0 +1,77 @@
+<div class="header">
+  <div class="invisible-side-bar"></div>
+
+  <div class="side-bar">
+    <ul class="list">
+      <li>
+        <button class="list-item" (click)="openPanel(panels[1])">
+          <div class="wrapper">
+            <p class="title">Putovanja</p>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button class="list-item" (click)="openPanel(panels[2])">
+          <div class="wrapper">
+            <p class="title">Korisnici</p>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button class="list-item" (click)="openPanel(panels[3])">
+          <div class="wrapper">
+            <p class="title">Rezervacije</p>
+          </div>
+        </button>
+      </li>
+      <li>
+        <button class="list-item" (click)="openPanel(panels[4])">
+          <div class="wrapper">
+            <p class="title">Komentari</p>
+          </div>
+        </button>
+      </li>
+      <div></div>
+      <li>
+        <button class="list-item" (click)="logoutUser()">
+          <div class="wrapper">
+            <p class="title" id="logout">Odjava</p>
+          </div>
+        </button>
+      </li>
+
+    </ul>
+
+    <div class="socials">
+
+      <div class="icon">
+        <a routerLink="/home"><img src="../../../assets/images/airplane.png"></a>
+      </div>
+
+      <div class="section-title">
+        <h1 class="title">Medina Ferhatović</h1>
+        <h1 class="title">2024</h1>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="content">
+
+   <div class="spline" *ngIf="checkDest(panels[0])">
+    <h1>Bašta Putovanja</h1>
+    <img src="https://images4.alphacoders.com/665/665825.jpg" alt="" frameborder='0' width='100%' height='100%'>
+   </div>
+
+    <app-admin-destination *ngIf="checkDest(panels[1])"></app-admin-destination>
+
+    <app-admin-user *ngIf="checkDest(panels[2])"></app-admin-user>
+
+    <app-admin-booking *ngIf="checkDest(panels[3])"></app-admin-booking>
+
+    <app-admin-comment *ngIf="checkDest(panels[4])"></app-admin-comment>
+
+  </div>
+
+
+</div>

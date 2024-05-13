@@ -1,0 +1,4 @@
+_id,city,country,description,imageURL,review,categories[0],categories[1],categories[2],comments[0].user,comments[0].message,comments[0]._id,comments[0].date,__v
+664116bf72f1657add84c835,Istanbul,Turska,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sodales iaculis quam in lobortis. ",photos/istanbul.png,4.7,istanbul,turska,bosfor,6612cc439ccb6c52d2994b73,Koja je cijena putovanja?,664117bb72f1657add84c84d,2024-05-12T19:25:47.805Z,0
+6641174c72f1657add84c844,Venecija,Italija,Smatra se najljepšim gradom na svijetu.,photos/venecija.png,5,venecija,italija,gondola,,,,,0
+6641178b72f1657add84c847,Bihać,Bosna i Hercegovina,Jedan od gradova sa prelijepom prirodom u ovoj zemlji.,photos/bihac.png,4.5,bihać,bosna i hercegovina,una,6640f856b26c29c98b84a846,Prelijep grad,664117ea72f1657add84c854,2024-05-12T19:26:34.502Z,0

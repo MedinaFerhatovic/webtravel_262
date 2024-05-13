@@ -1,0 +1,64 @@
+<div class="content">
+  <div class="users">
+    <mat-tab-group mat-align-tabs="center" preserveContent>
+    
+      <mat-tab label="PREGLED">
+        <div class="show-booking">
+  
+          <mat-accordion #myaccordion="matAccordion" multi="true">
+            <mat-expansion-panel class="booking" *ngFor="let booking of bookings"
+              (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+  
+              <mat-expansion-panel-header>
+                <p>{{booking.fullName}} - </p>
+                <p>{{booking._id}}</p>
+              </mat-expansion-panel-header>
+  
+              <div class="booking-section">
+  
+                <div class="booking-info" style="{{showInput}}">
+                   
+                  <span>
+                    <strong>ID korisnika: </strong>{{userID}}
+                  </span>
+  
+                  <span>
+                    <strong>ID Destinacije:</strong>{{booking.destinationID}}
+                  </span>
+  
+                  <span>
+                    <strong>Ime i prezime korisnika: </strong>{{booking.fullName}}
+                  </span> 
+
+                  <span>
+                    <strong>Broj osoba: </strong>{{booking.persons}}
+                  </span> 
+
+                  <span>
+                    <strong>Datum početka rezervacije:</strong>{{booking.startDate}}{{booking.userID}}
+                  </span>
+
+                  <span>
+                    <strong>Datum kraja rezervacije:</strong>{{booking.endDate}}{{booking.userID}}
+                  </span>
+  
+                </div>
+  
+                  <mat-action-row>
+                    <button mat-button color="warn" (click)="deleteBooking(booking._id); ">OBRIŠI</button>
+                  </mat-action-row>
+
+              </div>
+  
+            </mat-expansion-panel>
+          </mat-accordion>
+  
+  
+        </div>
+      </mat-tab>
+  
+  
+    </mat-tab-group>
+  </div>
+  </div>
+  

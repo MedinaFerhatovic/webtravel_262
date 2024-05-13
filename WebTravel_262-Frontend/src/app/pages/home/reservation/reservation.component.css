@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+  }
+
+.bookings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px 20px;
+}
+  
+  .content {
+    height: 89vh;
+    background-color: #58AEC4;
+    background-image: url("src/assets/images/Background.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .bookings .header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .bookings h2 {
+    font-size: 25px;
+    padding: 5px;
+    font-weight: bold;
+    color: #2C3E50; 
+    font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+    margin: auto;
+  }
+  
+  .booking {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .booking table {
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 10px;
+  }
+  
+  .booking th, .booking td {
+    padding: 10px; 
+  }
+  
+  .booking p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .booking button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .booking button:hover {
+    background-color: #d32f2f;
+  }
+
+  .empty-message p {
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+    color: #2C3E50; 
+    font-family: "Lucida Handwriting", "Brush Script MT", ursive;
+    margin: auto;
+    margin-top: 100px;
+  }

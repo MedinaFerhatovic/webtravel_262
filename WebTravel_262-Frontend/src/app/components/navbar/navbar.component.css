@@ -1,0 +1,270 @@
+.container {
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  background-color: #afccdf;
+  opacity: 0.9; 
+  width: 97.4%;
+  border-bottom: 6px solid #022027; 
+  padding: 10px 20px;
+  border-radius: 40px;
+}
+
+.container #logo {
+  margin-right: 20px; 
+}
+
+#logo img {
+  width: 50px;
+  transition: all 0.2s ease-in-out;
+  margin-left: 30px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: rotate(5deg); 
+  }
+
+  20%, 80% {
+    transform: rotate(-5deg); 
+  }
+
+  30%, 50%, 70% {
+    transform: rotate(5deg);
+  }
+
+  40%, 60% {
+    transform: rotate(-5deg); 
+  }
+}
+
+#logo img:hover {
+  animation: shake 0.72s ease-in;
+}
+
+.container .container-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+
+button {
+  font-size: 16px;
+  color: #2C3E50; 
+  background-color: transparent; 
+  border: none; 
+  cursor: pointer;
+  margin: 0 10px; 
+  padding: 5px 10px; 
+  transition: all 0.3s ease; 
+}
+
+button:hover {
+  background-color: #1b6677; 
+  color: #c5deee; 
+}
+
+#right,
+#left {
+  margin: auto 10px;
+}
+
+#right{
+  margin-right: 30px;
+}
+
+#sandwich{
+  display: none;
+}
+label {
+  font-size: 20px;
+  text-align: center;
+  display: none;
+  width: 26px;
+  padding: 5px;
+  color: white;
+}
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 550px) {
+
+  #left, #right{
+    display: none;
+  }
+  .container{
+    justify-content: center;
+  }
+
+  #sandwich{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(2, 32, 39,0.99);
+  }
+
+  label{
+    display: block;
+    cursor: pointer;
+  }
+
+  .container{
+    border-bottom: none;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+  }
+
+  #menu button{
+    transition: all .5s ease-in-out;
+    margin: 5px auto;
+    padding: 2px 5px;
+    width: 100px;
+  }
+
+  #menu div button{
+    margin: 5px 15px;
+  }
+  #menu button:hover{
+    transition-duration: 0.5s;
+
+    background-color: rgba(239, 248, 253,0.4);
+  }
+  label {
+    transition: all .2s ease-in-out;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+  }
+
+  label:hover{
+
+    opacity: 1;
+    transition-duration: 1s;
+    transform: translateY(3px);
+  }
+
+  #toggle:checked + #menu {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+
+}
+
+
+.login, .register{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -220px;
+  margin-left: -300px;
+  display: flex;
+  flex-direction: column;
+
+  width: 590px;
+  height: auto;
+  border-radius: 30px;
+  background-color: #fff;
+  border: 3px solid #58AEC4;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  z-index: 3;
+}
+
+.login form, .register form{
+  background-color: #eff8fd;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  padding-bottom: 0;
+}
+
+.form-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-title h1{
+  color: #2C3E50;
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+  font-size: 30px;
+  padding: 5px;
+  font-weight: bold;
+  margin-left: 160px;
+}
+
+.login form mat-form-field{
+  margin: 5px 0;
+}
+
+#names{
+  display: flex;
+  justify-content: space-between;
+}
+
+#names mat-form-field{
+  width: 265px;
+}
+
+.register form mat-form-field{
+  margin: 6px 0;
+}
+
+#form-btn{
+  background-color: #58AEC4;
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.login #reg-btn{
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-left: 100px;
+  margin-right:100px;
+}
+
+#reg-btn{
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  font-size: 15px;
+  margin-left: 100px;
+  margin-right:100px;
+}
+
+#form-btn:hover {
+  background-color: #07566a;
+}
+
+.login #reg-btn:hover{
+  background-color: #07566a;
+}
+
+
+@media only screen and (max-width: 610px){
+  .login, .register{
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -190px;
+    margin-left: -225px;
+    width: 450px;
+}
+}
+

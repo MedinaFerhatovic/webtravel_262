@@ -1,0 +1,4 @@
+_id,firstName,lastName,username,password,active,role,__v,status
+6612cc439ccb6c52d2994b73,Medina,Admin,Admin,admin123,true,admin,0,
+6640f856b26c29c98b84a846,Test,Test,Test1,test12345,,user,0,true
+6640fcc5b26c29c98b84a865,Test2,Test2,TestDva,testDva123,,user,0,false

@@ -1,0 +1,39 @@
+<div id="top">
+    <app-navbar></app-navbar>
+</div>
+
+<div class="content">
+  
+    <div class="bookings">
+      <div class="header">
+        <h2>Historija rezervacija putovanja</h2>
+      </div>
+      <div class="booking" *ngFor="let booking of bookings">
+        <table>
+          <thead>
+            <tr>
+              <th>Destinacija</th>
+              <th>Ime i prezime</th>
+              <th>Broj osoba</th>
+              <th>Početak</th>
+              <th>Kraj</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{booking.destinationID}}</td>
+              <td>{{booking.fullName}}</td>
+              <td>{{booking.persons}}</td>
+              <td>{{booking.startDate}}</td>
+              <td>{{booking.endDate}}</td>
+              <td><button *ngIf="isEndDateValid(booking.endDate)" (click)="deleteBooking(booking._id)">Otkaži rezervaciju</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="empty-message" *ngIf="bookings.length === 0">
+        <p>Nemate nijednu rezervaciju.</p>
+      </div>
+    </div>
+  </div>
+  
