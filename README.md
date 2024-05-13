@@ -53,7 +53,25 @@ Cilj ovog projekta je izraditi web aplikaciju za turističku agenciju koja će o
 5. Zatim, pokrenite frontend aplikaciju pomoću `ng serve`.
 
 ## Screenshots 📸
+### User
+![1](https://github.com/MedinaFerhatovic/webtravel_262/assets/94976612/02d9b977-f4ea-4054-ae4d-a4f32caed6a5)
+![2](https://github.com/MedinaFerhatovic/webtravel_262/assets/94976612/d5437ff1-833a-437f-9237-1c01b57e6df0)
+![3](https://github.com/MedinaFerhatovic/webtravel_262/assets/94976612/2b482f34-0615-44df-82bf-94c37f6765e4)
+![4](https://github.com/MedinaFerhatovic/webtravel_262/assets/94976612/ef47b73d-dbf5-4f15-83a9-6c70a4cc4552)
+![5](https://github.com/MedinaFerhatovic/webtravel_262/assets/94976612/cd373a9e-2bd9-409d-bb27-b6c7f7610d09)
+![6](https://github.com/MedinaFerhatovic/webtravel_262/assets/94976612/b585d318-90a0-4b43-a539-f4272262baa4)
+### Admin
+![7](https://github.com/MedinaFerhatovic/webtravel_262/assets/94976612/552c1e74-2a9c-480c-a464-454def653a9b)
+![8](https://github.com/MedinaFerhatovic/webtravel_262/assets/94976612/3f79344c-c06d-4c31-b8ab-36b6b066c55f)
+![9](https://github.com/MedinaFerhatovic/webtravel_262/assets/94976612/3201fc4e-0b07-4998-9c22-02a45111182d)
+![10](https://github.com/MedinaFerhatovic/webtravel_262/assets/94976612/445d8579-1cdc-4e0d-88e0-0bed5ab8962e)
+![11](https://github.com/MedinaFerhatovic/webtravel_262/assets/94976612/80df35ab-dce4-4042-a1c2-1dd40ba2037c)
+![12](https://github.com/MedinaFerhatovic/webtravel_262/assets/94976612/df1e44ab-bf32-4ef6-95be-5e763487ce16)
+![13](https://github.com/MedinaFerhatovic/webtravel_262/assets/94976612/8299dbe9-aea5-47b8-bde4-74d44d39e1be)
 
-![Screenshot 1](screenshot1.png)
-![Screenshot 2](screenshot2.png)
+
+
+
+
+
 
