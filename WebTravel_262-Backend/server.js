@@ -70,7 +70,7 @@ app.post('/photo', multer({ storage: storage }).single('image'), (req, res) => {
 
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://ferhatovicmedina21:medina@cluster0.p2o89us.mongodb.net/dbtravel_262').then(() => console.log("Database Connected!")).catch((error) => console.log(error));
+mongoose.connect('mongodb+srv://ferhatovicmedina21:password@cluster0.p2o89us.mongodb.net/dbtravel_262').then(() => console.log("Database Connected!")).catch((error) => console.log(error));
 
 
 const destController = require('./src/controllers/destinations.controller').controller;
